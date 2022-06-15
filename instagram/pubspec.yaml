@@ -1,0 +1,47 @@
+name: instagram
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  quiver: ^3.1.0
+  collection: ^1.16.0
+  path_to_regexp: ^0.4.0
+  go_router: ^3.1.1
+  flutter_screenutil: ^5.5.3+2
+  flutter_svg: ^1.1.0
+  camera: ^0.9.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  flutter_gen_runner: ^4.3.0
+  build_runner: ^2.1.11
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/images/
+
+  fonts:
+    - family: AppIcons
+      fonts:
+        - asset: lib/assets/icons/app_icons.ttf
+
+flutter_gen:
+  output: lib/assets/gen
+
+  integrations:
+    flutter_svg: true
